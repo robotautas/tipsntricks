@@ -103,7 +103,7 @@ valid_users = ['admin', 'player1', 'player2']
 # ...
 
 match command.split():
-    case ['sign', 'in', user if user in valid_users]:
+    case ['sign', 'in', user] if user in valid_users:
         print(f'hello, {user}!')
 ```
 
